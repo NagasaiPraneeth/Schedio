@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+}
+
+.bodySC{
+    margin: 0px;
+    border: 0px;
+    height: 100vh;
+}
+
+.bodyySC{
+    background-color: #0E1525;
+    width: calc(100%-100px);
+    height: calc(100% - 95px);
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.stageSC{
+    padding: 30px;
+    border: solid  #141e2f;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 7px;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.wrapperSC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  }
+
+  .user-cardSC{
+     display: flex;
+     font-family: 'Montserrat', sans-serif;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: #141e2f;
+     border-radius: 10px;
+     border:1px solid rgb(28, 60, 88);
+     padding: 30px;
+     width: 425px;
+     height: 170px;
+     position: relative;
+     overflow: hidden;
+     box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+ }
+ 
+ .user-cardSC:hover{
+     border:1px solid rgb(39, 83, 122);
+ }
+ 
+ .user-cardSC:active{
+     border:2px solid rgb(39, 83, 122);
+ }
+ 
+  
+ .user-cardSC:before {
+    content: '';
+    position: absolute;
+    height: 300%;
+    width: 173px;
+    background:rgb(4, 67, 112);
+    top: -60px;
+    left: -125px;
+    z-index: 0;
+    transform: rotate(17deg);
+  }
+  
+  .user-card-imgSC {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    z-index: 3;
+  }
+  
+  .user-card-imgSC img {
+    width: 150px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 3px;
+  }
+  
+  .user-card-infoSC {
+    text-align: center;
+  }
+  
+  .user-card-infoSC h2 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .user-card-infoSC p {
+    font-size: 14px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+  .user-card-infoSC p span {
+     font-weight: 700;
+     margin-right: 10px;
+ }
+  @media only screen and (min-width: 608px) {
+    .user-cardSC {
+      flex-direction: row;
+      align-items: flex-start;
+    }   
+    .user-card-imgSC {
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+  
+    .user-card-infoSC {
+    text-align: left;
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    color: white;
+    }
+  }
+ 
+  @media (max-width: 607px){
+    .stageSC{
+        justify-content: center;
+    }
+    .user-cardSC{
+        height:fit-content;
+        max-width: 300px;
+    }
+    .user-cardSC:before {
+       width: 300%;
+       height: 200px;
+       transform: rotate(0);
+    }
+    .user-card-infoSC h2 {
+       margin-top: 25px;
+       font-size: 35px;
+    }
+    .user-card-infoSC p span {
+       display: block;
+       margin-bottom: 10px;
+       font-size: 18px;
+    }
+  }
+
+

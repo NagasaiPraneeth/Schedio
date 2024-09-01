@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+.body{
+    margin: 0px;
+    /* height: 100vh; */
+    box-sizing: border-box;
+}
+.fpage1{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    background-color: #0b0b0b ;    /* overflow-y: scroll; */
+    /* scroll-snap-type: y mandatory; */
+
+
+}
+
+.fheader{
+    height: 65px;
+    align-items: center;
+    width: 100%;
+    background-color: #0b0b0b ;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.fheaderset1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+}
+
+.flogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-left:20px;
+    margin-bottom:14px;
+
+} 
+
+.ftitle{
+    font-size: 1rem;
+    font-weight: 1000;
+    color: aliceblue;
+    margin-top:9px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.fbuttons{
+    display: flex;
+    flex-direction: row;
+    margin: 2px 20px;
+    gap: 20px;
+}
+
+.fsignup{
+
+    color: aliceblue;
+    height: 40px;
+    width:100px;
+    border: 0.1px solid #2a2f3e;
+    background-color: #141e2f;
+}
+
+.fsignup:hover{
+    border:0.1px solid rgb(156, 156, 156);
+}
+
+.fbodyy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    box-sizing: border-box;
+    background-color: #141e2f;
+    height: auto;
+}
+
+.section {
+    background-color: #0b0b0b ;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    /* padding: 20px; */
+    /* border-radius: 8px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* margin: 20px 0; */
+    opacity: 0;
+    transform: translateY(20px); /* Initially, move sections down */
+    height:  calc(100vh - 65px) ;
+            /* overflow-y: auto; */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.section.active {
+    opacity: 1;
+    transform: translateY(0); /* Move sections back to their original position */
+}
+
+.jdet{
+    margin: 10px 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.jdetimage{
+    flex: 0 1 50%;
+    
+    /* align-items: center;
+    justify-content: center; */
+}
+.jdetimage img{
+    width: 100%;
+    /* opacity: 0.5; */
+
+}
+
+/* .jdetimage img {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 2s, transform 1s;
+} */
+
+/* .section.active .jdetimage img {
+    opacity: 1;
+    transform: translateX(0);
+}
+.scrolling-up .jdetimage img {
+    transition: none;
+} */
+
+#jdetdetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+/* @keyframes changeBorderColor {
+    0% { border-color: #154306; } 
+    25% { border-color: #17b862; } 
+    50% { border-color: #076035; } 
+    75% { border-color: #043b0f; } 
+    100% { border-color: #064738; } 
+  } */
+  
+  /* Apply the animation to an element with a border */
+  .jdetimage img {
+    border-radius: 50px;
+    /* border: 2px solid;  */
+    animation: changeBorderColor 4s linear infinite; /* Adjust duration and timing function as needed */
+  }
+  
+.jjjjj{
+    font-size: 22px;
+    /* font-weight: 600; */
+    /* text-shadow: 4px 4px 8px  rgb(254, 253, 253); */
+}
+
+.aaaaa{
+    font-size: 25px;
+}
+
+.aaaaa :hover{
+    border: 0.3px solid white;
+}
+
+.aaaaa :active{
+    border: 0.5px solid white;
+}
+
+.aaaaa p{
+    background-color: rgb(4, 67, 112);
+    padding: 10px;
+}
+main{
+    width: 100%;
+}
+
+.ffooter{
+    display: flex;
+    /* margin-top: 65px; */
+    box-sizing: border-box;
+    background-color: #141e2f;
+    width: 100%;
+    height: calc(100vh - 65px); 
+    color: #f8f8f8;  
+    box-sizing: border-box;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5%;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.ffele{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.fonline{
+    display: flex;
+    flex-direction: column;
+}
+
+#fcreate{
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+#ficons{
+    justify-content: space-around;
+}
+
+.jjjjj1{
+    display: flex;
+    flex-direction: row;
+}
+
+.jjjjj1 img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    cursor: pointer;
+  }
+  
+.flip {
+    animation: flip 0.6s ease-out; /* Customize the duration and timing function as needed */
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes flip {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  .video-container video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  .text-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    z-index: 1;
+  }
+  .section4{
+    overflow: hidden;
+  }
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+

@@ -1,0 +1,94 @@
+.sgtotal{
+    min-height: calc(100vh - 120px);
+    margin: 0px 5%;
+    position: relative;
+    
+}
+.sbackbutton{
+    display: flex;
+    width: 100%;
+    color: aliceblue;
+    margin: 10px;
+    
+}
+.sbackbutton p{
+    border: 0.1px solid #2a2f3e;
+    border-radius:10px ;
+    padding: 10px;
+}
+
+.sbackbutton p:hover{
+    border-color: #4e5569;
+}
+
+.project-card{
+    height: 200px;
+    width: 100%;
+    background-color: #141e2f;
+    border-radius: 20px;  
+    color:#a6a5a5;
+    margin: 10px;
+}
+
+.cardpart{
+    display: flex;
+}
+
+.profile-picture{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+.pdiscript{
+    width: calc(100% - 140px);
+    max-height: 135px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+/* .row1{
+    display: flex;
+} */
+
+.pname p{
+    color: #cfcfcf;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Two columns */
+    gap: 10px;  /* Spacing between grid items */
+}
+  
+.grid-item {
+    /* border: 3px solid #20283b; */
+    padding-right: 20px;
+}
+
+.notfoundvid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    justify-content: center;
+}
+
+.nothingherep{
+    font-size: 15px;
+    color: aliceblue;
+}

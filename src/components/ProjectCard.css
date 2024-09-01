@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    user-select: none;
+}
+
+.bodyPC{
+    margin: 0px;
+    border: 0px;
+    height: 100vh;
+}
+
+.bodyyPC{
+    background-color: #0E1525;
+    width: calc(100%-100px);
+    height: calc(100% - 95px);
+    padding: 30px;
+    padding-top: 0px;
+}
+
+.stagePC{
+    padding: 30px;
+    border: solid  #141e2f;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 7px;
+    display: flex;
+    margin-top: 5px;
+}
+
+.project-cardPC{
+    height: 125px;
+    border: 1px solid rgb(28, 60, 88);
+    width: 100%;
+    background-color: #141e2f;
+    border-radius: 10px;  
+    color:#a6a5a5;
+    margin: 30px 10px;
+}
+
+.project-cardPC:hover{
+    border: 1px solid rgb(36, 90, 138);
+}
+
+.project-cardPC:active{
+    border: 1px solid rgb(47, 114, 173);
+}
+.cardpartPC{
+    display: flex;
+}
+
+.profile-picturePC{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+.profile-sectionPC i{
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer; 
+}
+
+
+.langcontPC{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.langPC{
+    color:rgb(222, 222, 222);
+    font-size: 20px;
+    /* background-color: #0E1525; */
+    margin:0px;
+    margin-right: 10px;
+    height: 22px;
+    justify-self: center;
+    max-width:fit-content;
+    padding-right: 3px;
+    padding-left:3px;
+    /* border:1px solid rgb(50, 99, 142); */
+    /* border-radius:7px; */
+}
+.langPC div{
+    margin-top: 2px;
+    text-align: right;
+}
+
+.huh{
+    font-size: 14px;
+    border:1px solid rgb(50, 99, 142);
+    border-radius:7px; 
+    padding: 5px;
+}
+
+.notlikethis{
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row1PC{
+    display: flex;
+}
+
+.pnamedisPC{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pdiscriptPC p{
+    font-size: 19px;
+    height:45px;
+    overflow-y:hidden ;
+}
+
+.pnamePC p{
+    color: #cfcfcf;
+    font-size: 28px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    .row1PC {
+        flex-direction: column; 
+    }
+
+    .project-cardPC {
+        width: 100%; 
+        margin: 10px 0; 
+        height: 125px;
+    }
+
+    .pdiscriptPC p{
+        height:50px;
+        overflow-y: hidden;
+    }
+}
+
+.getlifedude{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

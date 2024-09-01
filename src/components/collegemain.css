@@ -1,0 +1,654 @@
+* {
+    margin: 0px;
+}
+
+.body1 {
+    display: block;
+    margin: 0px;
+    border: 0px;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+
+/* .parent-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+} */
+
+.headerCollege {
+    background-color: #1c2333;
+    border: 0px;
+    min-height: 65px;
+    border-bottom: 0.1px solid #3C445C;
+    box-sizing: border-box;
+    display: block;
+}
+
+.logo {
+    margin-top: 16px;
+    margin-left: 15px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 1000;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 5px;
+    margin-top: 21px;
+}
+
+.logoset {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.searchbarset {
+    width: 40%;
+    display: flex;
+}
+
+.profileset {
+    width: 30%;
+    height: 100%;
+}
+
+.profileset p {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+.headerset {
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.domain select {
+    height: 35px;
+    width: 70px;
+
+    margin-top: 15px;
+    margin-left: 0px;
+    background-color: #21293b;
+    box-sizing: border-box;
+    border: 0.5px solid;
+    border-color: rgb(4, 67, 112);
+    border-right: #0E1525;
+    padding: 2px;
+    padding-left: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #a6a5a5;
+    outline: rgb(255, 255, 255);
+}
+
+.domain select:hover {
+    border: 1px solid #7190c6;
+}
+
+.searchbar {
+    width: 100%;
+    display: flex;
+}
+
+.searchbar input {
+    height: 35px;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0px;
+    background-color: #21293b;
+    box-sizing: border-box;
+    border: 0.5px solid;
+    border-color: rgb(4, 67, 112);
+    padding: 10px;
+    outline: rgb(255, 255, 255);
+    color: #a6a5a5;
+}
+
+.searchbar input:hover {
+    border: 1px solid #7190c6;
+    /* Add border on hover */
+}
+
+.search-icon {
+    margin-top: 15px;
+    font-size: 17px;
+    height: 35px;
+    width: 50px;
+    border: 5px;
+    border-color: aliceblue;
+    background-color: rgb(4, 67, 112);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.search-icon:hover {
+    border: 1px solid #7190c6;
+}
+
+.search-icon i {
+    margin-top: 10px;
+    margin-left: 5px;
+    border: 5px;
+}
+
+.bodyy1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E1525;
+    flex: 1;
+    padding: 30px;
+    /* padding-top: 0px; */
+    padding-bottom: 0px;
+    padding-right: 0px;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    position: relative;
+}
+
+.filters {
+    display: block;
+    width: 50%;
+    height: 25px;
+    margin: auto;
+    display: flex;
+    position: relative;
+    background-color:#0E1525;
+    border-radius: 9px;
+    box-sizing: border-box;
+
+}
+
+
+.filter3,
+.filter4 {
+    width: 25%;
+    height: 100%;
+    /* margin: 0;
+    padding: 0 */
+}
+
+
+
+.filter4 select {
+    border-bottom-right-radius: 10px;
+}
+
+.filters select {
+    width: 100%;
+    border: none;
+    background-color: #1c2333;
+    height: 100%;
+    color: #a6a5a5;
+    outline: rgb(255, 255, 255);
+}
+
+
+.filters select:hover {
+    border: 1px solid #7190c6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.maincard {
+    margin: 20px;
+}
+
+.maincard1 {
+    margin: 10px;
+}
+
+.project-card {
+    height: 200px;
+    border: 0.1px solid #2a2f3e;
+    width: 100%;
+    background-color: #141e2f;
+    border-radius: 20px;
+    color: #a6a5a5;
+    margin: 10px 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.project-card:hover {
+    border: 1px solid rgb(36, 90, 138);
+}
+
+.project-card:active {
+    border: 1px solid rgb(47, 114, 173);
+}
+
+.cardpart {
+    display: flex;
+}
+
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+}
+
+.profile-section i {
+    text-align: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pdiscript {
+    max-height: 140px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+}
+
+.pname p {
+    color: #cfcfcf;
+    font-size: 28px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.cmaintotal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 5%;
+
+}
+
+
+.cmaingraph {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:1000px) {
+    .cmaingraph {
+        flex-direction: column;
+    }
+}
+
+.justincase {
+    width: 100%;
+    /* flex: 1; */
+    height: au350pxo;
+}
+
+.inmine{
+    flex-grow: 1;
+}
+.myselfanu{
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 350px;
+
+}
+
+.chart-container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pbox{
+   
+    box-sizing: content-box;
+    border: 2px solid rgb(7, 90, 149);
+    border-radius: 10px;
+    max-width: 220px;
+    max-height: 2000px;
+    background-color: rgb(33, 32, 32);
+    position:absolute ;
+    right: 0;
+    z-index: 999;
+    display: none;
+    top:60px;
+    /* left: 100%; */
+    /* box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3); */
+
+}
+.para p{
+    color: rgb(200, 200, 207);
+
+}
+.two{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+    padding-right: 5px;
+
+}
+.two p{
+    display: block;
+    padding-left: 10px;
+    color: rgb(236, 236, 242);
+}
+.two:hover{
+    background-color: rgb(70, 71, 71);
+    color: rgb(236, 236, 242);
+}
+.pp{
+    margin-left: 10px;
+}
+.pphoto{
+    /* display: block; */
+    background-color: rgb(173, 186, 194);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-right: 10px; */
+}
+.pelement{
+    display: block;
+
+    /* text-align: center;
+ */
+}
+.para{
+    margin: 0px;
+    padding: 5px 0px;
+
+
+}
+
+.logout{
+    margin: 0px;
+    padding: 5px 0px;
+
+
+}
+.para p{
+    margin-left: 10px;
+}
+.para:hover{
+    background-color: rgb(70, 71, 71);
+    /* color: blue; */
+  
+
+}
+.logout:hover{
+    background-color: rgb(70, 71, 71);
+    /* color: blue; */
+  
+
+}
+.fas fa-sign-out-alt{
+    font-size: 26px;
+    color: aliceblue;
+}
+.logout p{
+    margin-left: 10px;
+    color: rgb(236, 236, 242);
+}
+.blur-background
+{
+    filter: blur(1.6px);
+}
+.unblurred-content
+{
+    filter:blur(0) !important;
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+
+.headersetCollege { 
+    height: 65px;
+
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+}
+
+.logosetCollege{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+}
+
+.logoCollege{
+    font-size: 40px;
+    /* margin-top: 16px; */
+    margin-left: 20px;
+}
+
+.titleCollege {
+    font-size: 1.15rem;
+    font-weight: 1000;
+    color: aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    margin-left: 5px;
+    /* margin-top: 28px; */
+}
+
+.searchbarsetCollege{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbarCollege {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbarCollege input{
+    height: 35px;
+    width: 100%;
+    /* margin-top: 15px; */
+    margin-left: 0px;
+    background-color: #21293b;
+    box-sizing: border-box;
+    border: 0.5px solid;
+    border-color: rgb(4, 67, 112);
+    padding: 10px;
+    outline: rgb(255, 255, 255);
+    color: #a6a5a5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.searchbarCollege input:hover {
+    border: 1px solid #7190c6; /* Add border on hover */
+}
+
+.search-iconCollege{
+    /* margin-top: 15px; */
+    font-size: 17px;
+    height: 35px;
+    width: 50px;
+    border: 5px;
+    border-color: aliceblue;
+    background-color:rgb(4, 67, 112) ;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.search-iconCollege:hover {
+    border: 1px solid #7190c6;
+}
+
+.iCollege{
+    margin-top: 10px;
+    margin-left: 8px;
+    border: 5px;
+}
+
+.profilesetCollege{
+    position: absolute;
+    right: 5px;
+    gap: 15px;
+    align-items: center;
+    display: flex;
+    /* width: 30%;
+    height: 100%; */
+}
+
+.okiaddproject{
+    color: #919499;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    position: relative;
+    margin-top: 3px;
+}
+.okitext{
+    text-wrap: nowrap;
+    background: black;
+    color: #909fad;
+    padding: 5px;
+    font-size: 20px;
+    visibility: hidden;
+    background-color: #1a222b;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    border: 1px solid #2e4b63;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.okitext :hover{
+    border: 1px solid white;
+}
+
+.okiaddproject:hover .okitext{
+    visibility: visible;
+    opacity: 1;
+}
+.ppp{
+    display: flex;
+    align-items: center;
+    /* text-align: right; */
+    margin-right: 10px;
+    /* margin-top: 13px; */
+}
+
+.filtersCollege{
+    width:100%;
+    height: 30px;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    position: relative;
+    background-color:  #0E1525;
+    margin-bottom: 0px;
+}
+
+.filter3College,.filter4College{
+    width: 25%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.filter4College button{
+    width: 100%;
+    border: none;
+    background-color: #1c2333;
+    height: 100%;
+    color: #a6a5a5;
+    outline: rgb(255, 255, 255);
+    border-bottom-right-radius: 10px;
+}
+
+.filtersCollege select{
+    width: 100%;
+    border: none;
+    background-color: #1c2333;
+    height: 100%;
+    color: #a6a5a5;
+    outline: rgb(255, 255, 255);
+}
+
+.filtersCollege select{
+    width: 100%;
+    border: none;
+    background-color: #1c2333;
+    height: 100%;
+    color: #a6a5a5;
+    outline: rgb(255, 255, 255);
+}
+
+.filtersCollege select:hover, .filtersCollege input:hover, .filtersCollege button:hover {
+    border: 1px solid #7190c6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+h2
+{
+    color:#a6a5a5;
+}
+#yearSelector
+{
+    background-color: #1c2333 ;
+    color:#a6a5a5;
+    height:15px;
+    width:50px;
+    border-radius: 5px;
+
+}
+::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:rgb(4, 67, 112) ;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:rgb(4, 67, 112) ; 
+  }
+  .profileset-iconCollege
+  {
+    color: rgb(4, 67, 112);
+  }
+  .profileset-icon1
+  {
+    font-size: 40px; 
+    color: rgb(4, 67, 112); 
+
+  }
+  #cmainnp
+  {
+    color: #a6a5a5;
+  }
+  .year
+  {
+    color:#a6a5a5;
+  }

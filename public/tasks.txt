@@ -1,0 +1,11 @@
+student-card for hrmain
+header padding in all pages
+hrmain,project display,student main no projects found image
+hrmain less than 2 or 10 white page
+hrmain search fixing optional if time allows
+password pattern
+check email css
+random button student main
+logo loading animation
+delete comment
+student description, photo and other things

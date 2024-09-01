@@ -1,0 +1,59 @@
+/* ProjectPlatformAboutUs.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c2333;
+    color: #333;
+  }
+  
+  .TCcontainer {
+    height:100%;
+    width:clac(100%-10px);
+    padding: 10px;
+    border:3px solid rgb(52, 64, 89);
+    box-shadow: 0 0 20px rgba(109, 60, 60, 0.1);
+    border-radius: 10px;
+    margin: 20px 8%;
+  }
+
+  .tcin{
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  
+  .TCheader {
+    text-align: center;
+    /* margin-bottom: 40px; */
+  }
+  
+  .TCheader h1 {
+    color: #195ca2;
+    font-size: 3rem;
+  }
+  
+  .TCheader p {
+    font-size: 1.2rem;
+    /* margin-top: 15px; */
+    color: whitesmoke;
+    /* line-height: 2px; */
+  }
+
+  .TCterms h3{
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #007bff;
+  }
+  
+  .TCterms p{
+    margin-top: 20px;
+    color: whitesmoke;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
